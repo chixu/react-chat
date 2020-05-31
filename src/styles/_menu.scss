@@ -1,0 +1,27 @@
+.menu {
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.menu .avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 35px;
+  font-size: 40px;
+  line-height: 60px;
+  margin-top: 60px;
+  color: white;
+  background-color: $primary-color;
+}
+
+.menu svg {
+  width: 26px;
+  height: 26px;
+  fill: #aaa;
+  cursor: pointer;
+  margin-bottom: 35px;
+}

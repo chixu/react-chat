@@ -1,0 +1,138 @@
+.chat-list,
+.room {
+  width: 360px;
+  margin: 0 0 0 20px;
+  // background-color: #f8f7fc;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0;
+  box-sizing: border-box;
+}
+
+.chat-list {
+  height: 60%;
+}
+
+.room {
+  height: 40%;
+  padding-top: 0;
+}
+
+.chat-list-content,
+.room-content {
+  flex: 1;
+  overflow-y: auto;
+  // overflow-x: visible;
+  padding-left: 4px;
+}
+
+.chat-list-title,
+.room-title {
+  margin-left: 5px;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.chat-item {
+  display: flex;
+  align-items: flex-start;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-right: 10px;
+}
+
+.chat-item-selected,
+.room-item-selected {
+  // background-color: #f1effb;
+  background-color: #f8f7fc;
+  border-left: solid 4px $primary-color-darker;
+  margin-left: -4px;
+}
+
+.chat-item-selected .right .top {
+  color: $primary-text-color;
+  // letter-spacing: -1px;
+  // font-weight: bold;
+}
+
+.chat-item .avatar {
+  background-color: #f8f7fc;
+  position: relative;
+  margin: 12px;
+}
+
+.chat-item-selected .avatar {
+  background-color: white;
+}
+
+.chat-item .right {
+  position: relative;
+  flex: 1;
+  margin: 10px 0;
+  padding-left: 10px;
+  padding-right: 15px;
+}
+
+.chat-item .top {
+  width: 100%;
+  display: flex;
+  font-size: 24px;
+  color: black;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.chat-item .mid {
+  font-size: 16px;
+  color: #555;
+  margin: 8px 0;
+}
+
+.chat-item .bottom {
+  font-size: 12px;
+  color: #888;
+}
+
+.chat-item .bubble {
+  position: absolute;
+  line-height: 32px;
+  background-color: $primary-color-darker;
+  border-radius: 16px;
+  right: 15px;
+  top: 10px;
+  font-size: 18px;
+  color: #fff;
+  padding: 0 11px;
+}
+
+.chat-item .online {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: #26d523;
+  border-radius: 8px;
+  right: 2px;
+  bottom: 0px;
+}
+
+.room-item {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.room-item .avatar {
+  background-color: #f8f7fc;
+  margin: 12px;
+}
+
+.room-item-selected .avatar {
+  background-color: white;
+}
+
+.room-item .right {
+  padding-left: 10px;
+  font-size: 22px;
+  color: #333;
+}

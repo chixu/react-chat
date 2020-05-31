@@ -1,0 +1,66 @@
+html * {
+  font-family: Helvetica, Arial, sans-serif !important;
+}
+
+#root {
+  // background-color: $primary-color;
+  background-image: linear-gradient(to bottom, #e7e6fd, #e5e9fe, #e8f7ff);
+}
+
+.app {
+  display: flex;
+  min-height: 700px;
+  max-height: 1000px;
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+  margin: auto;
+  border-radius: 30px;
+  box-shadow: 0 2rem 2rem rgba(129, 30, 243, 0.2) !important;
+}
+
+.left-panel {
+  width: 80px;
+  // background-color: $primary-color-darker;
+  background-color: $middle-bg-color;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+.middle-panel {
+  background-color: $middle-bg-color;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.right-panel {
+  background-color: $right-bg-color;
+  flex: 1;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.shadow {
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2) !important;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #eee;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $primary-color-light;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $primary-color;
+}
